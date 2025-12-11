@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — 7 Star Restaurant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="logo.png" alt="logo" class="logo">
+        <div class="brand-text">
+          <span class="brand-name">7 Star</span>
+          <small class="brand-sub">Restaurant & Tiffin</small>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav-list" id="navListContact">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="menu.html" class="nav-link">Menu</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="tel:+919876543210" class="btn btn-outline">Call</a>
+        <button id="menuToggle3" class="menu-toggle" aria-expanded="false" aria-controls="navListContact">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="container section">
+      <div class="section-head">
+        <h1>Contact & Bookings</h1>
+        <p class="muted">We reply quickly on WhatsApp and phone</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="card contact-card">
+          <h3>Visit / Call</h3>
+          <p><strong>Address:</strong> LB Nagar, Hyderabad</p>
+          <p><strong>Phone:</strong> <a href="tel:+919876543210">+91 98765 43210</a></p>
+          <p><strong>Hours:</strong> 10:00 — 23:00 (Daily)</p>
+
+          <div class="social-row">
+            <a href="#" class="chip">WhatsApp</a>
+            <a href="#" class="chip">Instagram</a>
+          </div>
+
+          <div class="map-placeholder">
+            <!-- Replace with embedded Google Map iframe if needed -->
+            <img src="./map-placeholder.svg" alt="Map location">
+          </div>
+        </div>
+
+        <form id="contactForm" class="card contact-form" novalidate>
+          <h3>Send us a message</h3>
+          <label>
+            <span class="label-text">Name</span>
+            <input type="text" name="name" id="name" required placeholder="Your name">
+          </label>
+
+          <label>
+            <span class="label-text">Phone / WhatsApp</span>
+            <input type="tel" name="phone" id="phone" required placeholder="+91 9xxxxxxxxx">
+          </label>
+
+          <label>
+            <span class="label-text">Message</span>
+            <textarea name="message" id="message" rows="5" placeholder="What would you like to order / ask?"></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Send Message</button>
+            <button class="btn btn-ghost" type="reset">Reset</button>
+          </div>
+
+          <p id="formStatus" class="muted small" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p><strong>7 Star Restaurant</strong></p>
+        <p class="muted">LB Nagar, Hyderabad</p>
+      </div>
+      <div class="footer-actions">
+        <a href="index.html" class="link">Home</a>
+        <a href="menu.html" class="link">Menu</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/919876543210?text=Hello%20I%20want%20to%20order" class="whatsapp-fab" aria-label="WhatsApp">
+    <img src="whatsapp-icon.svg" alt="" />
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
